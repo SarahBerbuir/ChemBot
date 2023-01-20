@@ -93,7 +93,7 @@ After assembling the servo motors as robot arms, the ends will stick out. Raspbe
 
 #### 3.2.3 Create Fake Linkam station
 
-We decided to build a Linkam stage as a mock-up, which is a device that ... . The reason for making a replica is that we couldn't be in the chemistry lab very often and that we didn't want to break anything on the real device with the first beginnings of our prototype. 
+We decided to build a Linkam stage as a model, a stage for a specific research application such as semiconductor materials, which is used in many laboratories. The reason for making a replica is that we couldn't be in the chemistry lab very often and that we didn't want to break anything on the real device with the first beginnings of our prototype. 
 
 The mock-up is built approximately as shown in the 3D model in the picture. A hole was cut out of a square piece of wood with a hole saw, this piece is then glued to a very thin rectangular piece of wood, a cylinder about 2 cm in diameter is placed in the middle, which is painted black at the top so that the contrast between the sample and the background is greater for the camera. Glue aluminium foil for the optics into the resulting vacuum. Two bases are attached to the bottom of the dummy and a circle of magnets is placed in the middle to guide the rectangle holding the needle in a circle. In later stages of development, this also facilitates conductivity measurement.
 
