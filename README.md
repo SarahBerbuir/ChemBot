@@ -2,9 +2,11 @@
 ## Technical Project Description
 
 ### Story 
+<img width="238" alt="Logo" src="https://user-images.githubusercontent.com/83503396/213694473-d35c9208-7573-4f5b-9f8c-4f88c4ed014b.png">
+
 ChemBot is a great hardware robot …
 
-To make any robot function, however, requires hardware and software. In this project, we are going to show how to set up a ChemBot robot with Rasperry Pi Pico W and Flask, in order to be able to control and manage your robot.
+To make any robot function, however, requires hardware and software. In this project, we are going to show how to set up a ChemBot robot with Raspberry Pi Pico W and Flask, in order to be able to control and manage your robot.
 
 #### Outline
 1. General description of setting up everything
@@ -13,7 +15,7 @@ To make any robot function, however, requires hardware and software. In this pro
 
 #### Project Description
 ## 1. General description of setting up everything
-
+ChemBot consists of hardware and software components. From the hardware side for rebuilding the prototype, there is a robot arm, a mock-up Linkam Stage and a webcam that is connected to the laptop via USB. The software side consists of the code for the web server of the webcam and a web server of the Rasperry Pi Pico W, through which the servo motors are controlled.
 
 ## 2. Different prototype stages
 
@@ -26,10 +28,11 @@ The first prototype we created is the 3D model shown below. Two robot arms can b
 ### 3.1 Purchase list (recommendations)
 
 * [<img src="https://user-images.githubusercontent.com/83503396/213228672-ed7b5c59-06e0-44ac-a893-a8ca0a4c9911.png" width="70"/>](https://user-images.githubusercontent.com/83503396/213228672-ed7b5c59-06e0-44ac-a893-a8ca0a4c9911.png)
-Rasperry Pi Pico and USB cable: https://www.amazon.de/Raspberry-Pico-RPi-oder-Rasppishop/dp/B0B5GPSXX6/ref=sr_1_3?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3IU5U396SJOMQ&keywords=raspberry+pi+pico+w&qid=1669223804&sprefix=raspberry+pi+pico+w%2Caps%2C153&sr=8-3
+Raspberry Pi Pico and USB cable: https://www.amazon.de/Raspberry-Pico-RPi-oder-Rasppishop/dp/B0B5GPSXX6/ref=sr_1_3?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3IU5U396SJOMQ&keywords=raspberry+pi+pico+w&qid=1669223804&sprefix=raspberry+pi+pico+w%2Caps%2C153&sr=8-3
 * [<img src="https://user-images.githubusercontent.com/83503396/213222402-3cc18575-18cb-49a2-a40d-3136392fe67d.png" width="50"/>](https://user-images.githubusercontent.com/83503396/213222402-3cc18575-18cb-49a2-a40d-3136392fe67d.png) Servomotors: https://www.amazon.de/dp/B07KPS9845/ref=sspa_dk_detail_0?pd_rd_i=B07KPS9845&pd_rd_w=aAsjb&content-id=amzn1.sym.289b45a0-8ca0-4af2-9c85-5b0e57eb93c5&pf_rd_p=289b45a0-8ca0-4af2-9c85-5b0e57eb93c5&pf_rd_r=X7QVMN2B8A64BT1DVB58&pd_rd_wg=2Yez4&pd_rd_r=8100139d-5007-40e1-9164-e69768311cfd&s=toys&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw&th=1
 * [<img src="https://user-images.githubusercontent.com/83503396/213229837-3eb164bb-0443-46fa-b397-9c035e16bf35.jpeg" width="50"/>](https://user-images.githubusercontent.com/83503396/213229837-3eb164bb-0443-46fa-b397-9c035e16bf35.jpeg)
-Jumper cables: [https://www.amazon.de/AZDelivery-Jumper-Arduino-Raspberry-Breadboard/dp/B074P726ZR/ref=sr_1_1_sspa?ke
+Jumper cables: [https://www.amazon.de/AZDelivery-Jumper-Arduino-Raspberry-
+oard/dp/B074P726ZR/ref=sr_1_1_sspa?ke
 ywords=jumper%2Bkabel&qid=1669231300&sprefix=jumper%2B%2Caps%2C104&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&smid=A1X7QLRQH87QA3&th=1](https://www.amazon.de/dp/B074P726ZR?psc=1&ref=ppx_yo2ov_dt_b_product_details)
 * [<img src="https://user-images.githubusercontent.com/83503396/213225906-fd1136a6-14c4-4ccb-bc25-e5a2b160928d.png" width="50"/>](https://user-images.githubusercontent.com/83503396/213225906-fd1136a6-14c4-4ccb-bc25-e5a2b160928d.png) Breadboards: https://www.amazon.de/AZDelivery-Breadboard-Steckbrett-Kontakten-Arduino/dp/B078JJJ2SJ/ref=sr_1_4?keywords=steckbrett&qid=1669231268&sr=8-4
 * [<img src="https://user-images.githubusercontent.com/83503396/213225634-7655a353-6dd7-4edb-95c1-626eb5136a64.png" width="50"/>](https://user-images.githubusercontent.com/83503396/213225634-7655a353-6dd7-4edb-95c1-626eb5136a64.png) Wooden spatula: https://www.amazon.de/gp/product/B004ULKBLI/ref=ppx_yo_dt_b_asin_title_o07_s00?ie=UTF8&psc=1
@@ -52,11 +55,11 @@ Stick the servo motors together with the wooden spatulas using the hot glue gun 
 
 [<img src="https://user-images.githubusercontent.com/83503396/213474640-d30029ef-7184-4b52-ad78-6b0ba6b3da1a.png" width="1000"/>](https://user-images.githubusercontent.com/83503396/213474640-d30029ef-7184-4b52-ad78-6b0ba6b3da1a.png)
 
-#### 3.2.2 Connection between Rasperry Pi-Pico W and servomotors
+#### 3.2.2 Connection between Raspberry Pi-Pico W and servomotors
 
-After assembling the servo motors as robot arms, the ends will stick out. The Rasperry Pi Pico is connected to the five ends of the servo motors using the jumper cables and the breadboard as shown in the picture. While the black connections mean GND which stands for ground, the red connections of the servo motor with VCC are connected to +5V VBUS of the pi pico so that current flows.  On the other hand, the coloured connections from the servo motor called PWM (pulse-width modulation) to the GPIO pinout of the pi indicate that the servo motors can be controlled individually with information.
+After assembling the servo motors as robot arms, the ends will stick out. Raspberry Pi Pico is a low-cost, high-performance microcontroller board with flexible digital interfaces. The Raspberry Pi Pico is connected to the five ends of the servo motors using the jumper cables and the breadboard as shown in the picture. While the black connections mean GND which stands for ground, the red connections of the servo motor with VCC are connected to +5V VBUS of the pi pico so that current flows.  On the other hand, the coloured connections from the servo motor called PWM (pulse-width modulation) to the GPIO pinout of the pi indicate that the servo motors can be controlled individually with information.
 
-[<img src="https://user-images.githubusercontent.com/83503396/213477549-1b2939b2-7ef1-44f2-8016-9f453ea30eff.png" width="400"/>](https://user-images.githubusercontent.com/83503396/213477549-1b2939b2-7ef1-44f2-8016-9f453ea30eff.png)
+[<img src="https://user-images.githubusercontent.com/83503396/213477549-1b2939b2-7ef1-44f2-8016-9f453ea30eff.png" width="500"/>](https://user-images.githubusercontent.com/83503396/213477549-1b2939b2-7ef1-44f2-8016-9f453ea30eff.png)
 
 #### 3.2.3 Create Fake Linkam station
 
@@ -65,12 +68,78 @@ We decided to build a Linkam stage as a mock-up, which is a device that ... . Th
 The mock-up is built approximately as shown in the 3D model in the picture. A hole was cut out of a square piece of wood with a hole saw, this piece is then glued to a very thin rectangular piece of wood, a cylinder about 2 cm in diameter is placed in the middle, which is painted black at the top so that the contrast between the sample and the background is greater for the camera. Glue aluminium foil for the optics into the resulting vacuum. Two bases are attached to the bottom of the dummy and a circle of magnets is placed in the middle to guide the rectangle holding the needle in a circle. In later stages of development, this also facilitates conductivity measurement.
 
 [<img src="https://user-images.githubusercontent.com/83503396/213476176-ace465f1-d23b-4d7e-ae60-686cf26497b0.png" width="500"/>](https://user-images.githubusercontent.com/83503396/213476176-ace465f1-d23b-4d7e-ae60-686cf26497b0.png)
+![Linkam](https://user-images.githubusercontent.com/83503396/213695361-c5925c17-aedf-42a0-9b8b-fbcf3d3474ba.jpeg)
+
 
 #### 3.3.4 Create height-adjustable stand for webcam
+In order to mount the camera at the right height above the Linkam station and thus imitate a microscope, an elaborate stand was built. Cut an elongated hole in an elongated piece of wood, attach an angle block with screws at the bottom and screw it to a large thin board so that it stands vertically. The camera is screwed onto another thin rectangular board, and an angle block is fixed to this board. A screw is placed in the angle with a small wooden cylinder in between. This is used to adjust the height, it can be tightened. A small screw with the diameter of the oblong hole is inserted in the lower part of the angle block so that the stand with the camera remains adjusted.
 
-Um die Kamera in der richtigen Höhe über der Linkam Station zu befestigen und dadurch ein Mikroskop nachzuahmen wurde ein aufwendiger stand gebaut. Bei einem länglichen Stück Holz wird ein längliches Loch gesägt, daraufhin, Wird unten ein Winkel mit Schrauben angebracht und es auf ein großes dünnes Brett geschraubt, sodass es senkrecht steht. Die Kamera wird mit Schrauben auf ein anderes dünnes rechteckiges Brett geschraubt, an dieses Brett wird wiederum ein Winkel geschraubt. In den Winkel wird eine Schraube geschraubt, mit einem kleinen Holzzylinder dazwischen. Das wird verwendet um die Höhe zu verstellen, es kann fest geschraubt werden. Im unteren Teil des Winkels wird eine kleine Schraube mit dem Durchmessers des länglichen Lochs geschraubt, damit der Ständer mit der Kamera gerade adjustiert bleibt.
+[<img src="https://user-images.githubusercontent.com/83503396/213476578-73508191-4e55-4b4c-89c2-fe37339ff569.png" width="200"/>](https://user-images.githubusercontent.com/83503396/213476578-73508191-4e55-4b4c-89c2-fe37339ff569.png)
 
-[<img src="https://user-images.githubusercontent.com/83503396/213476578-73508191-4e55-4b4c-89c2-fe37339ff569.png" width="150"/>](https://user-images.githubusercontent.com/83503396/213476578-73508191-4e55-4b4c-89c2-fe37339ff569.png)
+## 4. Software
 
+### 4.1 Short overview of GitHub code structure
+    
+`Local_webserver` contains code to set up a webserver that cropps and transfers the images from the webcam, `Rasperry_Pi_Pico` contains all the code to run the ChemBot website on the Rasperry Pi Pico W to control the servo motors. `Testing_Components` contains optional files that can help to test the servo motors and their interaction before setting up all the components.
+    
+### 4.2 Short overview of GitHub code structureWebserver of webcam using flask
+    
+In order to display the webcam image correctly on the ChemBot website, an extra web server is set up with the help of Flask, OpenCV is used to get the camera images and transform them.
 
+| Name         | Usage                             | Link                                    |
+| ------------ | --------------------------------- | --------------------------------------- |
+|[<img src="https://user-images.githubusercontent.com/83503396/213694242-ee8c5071-e070-492a-a0d5-5c39d1adfaef.png" width="60"/>](https://user-images.githubusercontent.com/83503396/213694242-ee8c5071-e070-492a-a0d5-5c39d1adfaef.png) flask      | Python web framework with useful tools and functions that facilitate the creation of web applications in Python.                   | https://flask.palletsprojects.com/en/2.2.x/|
+| [<img src="https://user-images.githubusercontent.com/83503396/213694260-6f6c6454-2d1d-49e4-a969-a74292163925.jpg" width="50"/>](https://user-images.githubusercontent.com/83503396/213694260-6f6c6454-2d1d-49e4-a969-a74292163925.jpg) cv2      | OpenCV is a free program library with algorithms for image processing and computer vision. It is written for the programming languages C, C++, Python and Java and is available as free software under the terms of the Apache 2 License.                   | https://opencv.org/|
+    
+Install `pip3 install flask`  and  `pip3 install opencv-python`.
+    
+After executing the file `app.py` the image of the camera can now be accessed under `http://127.0.0.1:8000/`. 
+    
+### 4.2 Optional: Test servomotors without Wifi
+    
+There are several files under `Testing_Components` that can help to test either individual servo motors `(Servomotor_Test3.py)` or the interaction of all servo motors.
+    
+### 4.3 Webserver of Raspberry Pi Pico W
 
+#### 4.3.1 Explanation of used libraries
+    
+For Setup of Raspberry Pi Pico W MicroPython was used and die module untendrunter.
+| Name         | Usage                             | Link                                    |
+| ------------ | --------------------------------- | --------------------------------------- |
+| network      | The network module is used to configure the WiFi connection                   | [https://docs.micropython.org/en/latest/esp8266/tutorial/network_basics.html](https://docs.micropython.org/en/latest/esp8266/tutorial/network_basics.html)|
+| socket         | This module provides access to the BSD socket interface.                         | [https://docs.micropython.org/en/latest/library/socket.html](https://docs.micropython.org/en/latest/library/socket.html)                                 |
+| machine         | This module contains specific functions related to the hardware on a particular board. Most functions in this module allow to achieve direct and unrestricted access to and control of hardware blocks on a system                         | [https://docs.micropython.org/en/latest/library/machine.html](https://docs.micropython.org/en/latest/library/machine.html)                      |
+| time       | This module provides functions for getting the current time and date, measuring time intervals, and for delays.          | [https://docs.micropython.org/en/latest/library/time.html](https://docs.micropython.org/en/latest/library/time.html) | 
+    
+#### 4.3.2 Setup webserver
+    
+##### Get Thonny IDE
+Download the Thonny IDE https://thonny.org/ and install it. Thonny is an integrated development environment for Python, recommended by the Raspberry Pi Foundation.
+    
+##### Set up MicroPython on Raspberry Pi Pico W
+    
+Basic steps of getting your Raspberry Pi Pico running with MicroPython. Follow these steps if you have a new Raspberry Pi Pico or you want to change a Pi Pico that is not currently setup for MicroPython.
+
+1. Download the MicroPython firmware image: https://micropython.org/download/rp2-pico/rp2-pico-latest.uf2
+2. Connect a Micro USB cable to your Pi Pico. But, do not yet con- nect it to your computer.
+3. Push and hold the button labeled "BOOTSEL"
+4. Connect the Pi Pico to your computer by plugging in the USB cable. You can now release the button.
+5. The Pi Pico will mount as a mass storage device (RPI-RP2)
+6. Copy the MicroPython image (Step 1) onto RPI-RP2
+7. Once completed, your Pi Pico reboots automatically and disap- pears from the list of mass storage devices. The microcontroller is now running MicroPython, congratulations! You can now interact with the Pi Pico through USB Serial.
+8. Find the corresponding serial port (On Windows: Check the Device Manager (Ports COM & LPT)))
+9. Connect to this serial line with and go to Run --> Select Interpreter and choose MicoPython (Rasoerry Pi Pico). Select the corresponding COM port or try automatic detection
+    
+Now the Raspberry Pi Pico W is successfully setup for use with MicroPython
+    
+First add your ssid and wifi password in file `wifi_credentials.py`. Run web_server.py and test it on im Terminal angegebenen Port.
+
+##### HTML code used
+    
+The file `html_code.py` shows an HTML code that is formatted correctly at first. In the last lines of the function there, unnecessary spaces and paragraphs are removed, as the Raspberry Pi Pico W cannot display so much information. This is also the reason why the user interface was kept very simple. For usability, a header with logo is displayed, as well as a short introduction text. There is a table positioned above the image of the webcam, which is fetched from the web server mentioned above. Also a text line showing which parts of the table are clicked. Two buttons, Start and Reset, can be used to activate the robot or to reset the already selected values.
+
+## 4. Using everything together
+    
+The hardware is in place, the web server of the webcam is set up, the web server of the Raspberry Pi Pico W is running. To access the web interface of Chembot, it is important to look at the terminal of the Thonny IDE (after running `web_server.py`). There you can see the port number, enter it into a browser. Now the page should be visible there. In the box of the table you should see the picture of the webcam. 
+    
+To operate it, one or two (in the implementation only the first one is important, the second one is meant for a possible second connected robot arm) of the table points are now clicked. Once the robot is correctly positioned in the joint of the Linkam station, Start is clicked. Now the robot guides the needle to the desired location of the sample.
