@@ -1,6 +1,8 @@
+# Test servomotor positions 
 from time import sleep
 from machine import Pin, PWM
 
+# Initialize information of servomotor
 pwm0 = PWM(Pin(0))
 pwm1 = PWM(Pin(1))
 pwm2 = PWM(Pin(2))
@@ -15,6 +17,7 @@ MIN_Position = 1000000
 MID_Position = 1500000
 MAX_Position = 2000000
 
+# Position servomotors
 pwm2.duty_ns(MIN_Position)
 pwm0.duty_ns(MIN_Position)
 pwm1.duty_ns(MIN_Position)

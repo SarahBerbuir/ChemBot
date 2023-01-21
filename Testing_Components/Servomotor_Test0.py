@@ -1,3 +1,4 @@
+# Test servomotor positions: Test changing servomotors position using ranges
 from time import sleep
 from machine import Pin, PWM
 
@@ -20,18 +21,12 @@ def positionServos():
         pwm2.duty_u16(pos[2])
         pwm3.duty_u16(pos[3])
         sleep(2)
+
+# Test positioning all 4 at once
 positionServos()
 
-while False:
-     for position in range(3500,6000,50):
-        pwm3.duty_u16(position)
-        sleep(0.01)
-     for position in range(6000,3500,-50):
-        pwm3.duty_u16(position)
-        sleep(0.01)   
-    
-while False:
-    #pwm1.duty_u16(5000)
+# Test changing servomotors position using ranges
+while True:
     for position in range(3000,6000,50):
         pwm2.duty_u16(position)
         sleep(0.01)
@@ -50,8 +45,3 @@ while False:
     for position in range(6000,2000,-50):
         pwm1.duty_u16(position)
         sleep(0.01)
-
-        
-#wm0.freq(0)
-#wm1.freq(0)
-#pwm2.freq(0)

@@ -1,3 +1,4 @@
+# Test servomotor positions: Test 1 transition to another
 from machine import Pin,PWM
 from time import sleep
 
@@ -5,6 +6,7 @@ MIN_Position = 5200
 MID_Position = 4400
 MAX_Position = 4400
 
+# Initializing 5 servomotors
 servo = PWM(Pin(0))
 servo.freq(50)
 servo.duty_u16(4400)
@@ -25,15 +27,7 @@ servo4 = PWM(Pin(4))
 servo4.freq(50)
 servo4.duty_u16(3000)
 
-while False:
-    print("Test")
-    servo.duty_ns(MIN_Position)
-    sleep(2)
-    servo.duty_ns(MID_Position)
-    sleep(2)
-    servo.duty_ns(MAX_Position)
-    sleep(2)
-
+# Test 1 transition to another
 while True:
     print("Test")
     #servo.duty_u16(MIN_Position)

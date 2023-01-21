@@ -1,3 +1,4 @@
+# Test servomotor positions: Position one servomotor, test each one at one time
 from machine import Pin,PWM
 from time import sleep
 
@@ -17,14 +18,3 @@ while True:
     sleep(2)
     servo.duty_u16(MAX_Position)
     sleep(2)
-
-while False:
-    print("Test")
-    for position in range(MIN_Position,MAX_Position,50):
-        servo.duty_u16(position)
-        sleep(0.01)
-    for position in range(MAX_Position,MIN_Position,-50):
-        servo.duty_u16(position)
-        sleep(0.01)
-
-
