@@ -1,3 +1,5 @@
+# This file contains the HTML and CSS code in the form of a string with unnecessary spaces 
+# and paragraphs truncated to save memory on the Raspberry Pi Pico.
 def getHTML(state):
     html =  """
     <!DOCTYPE html>
