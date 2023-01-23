@@ -39,13 +39,14 @@ Any robot, however, requires both hardware and software to function. In this pro
 
 5. Setup of all components
 
-### Project Description
+
+
 ## 1. General description
 ChemBot consists of both hardware and software components. On the hardware side for rebuilding the prototype, there is a robot arm, a mock-up Linkam Stage, and a webcam connected to the laptop via USB. The software side consists of the code for the webcam's web server and a Raspberry Pi Pico W web server, which controls the servo motors.
 
 ## 2. Different prototype stages
 
-The 3D model shown below is the first prototype we created, the second and third one can be seen in the other image. The first physical prototype is shown on the right, but the correct function and angle setting did not work as expected. The one on the left is our final prototype, which has five servo motors to achieve a wide range of angles.
+We had three prototypes in total, which are depicted in the images below. Our first prototype (1) was a 3D model. The image of second prototype (2) only depicts a very early version. The second prototype  (3 on the right side) only had four servo motors, causing the correct function and angle setting to fail. Our final prototype (3 on the left side) has five servo motors to achieve a wide range of angles. Moreover, it includes a mockup Linkam stage to test and specify its function.
 
 <img width="200" alt="Bildschirmfoto 2023-01-19 um 09 46 31" src="https://user-images.githubusercontent.com/83503396/213471994-934e0519-a25b-4381-9665-42536feb9e2f.png"> <img width="200" alt="Bildschirmfoto 2023-01-19 um 09 46 49" src="https://user-images.githubusercontent.com/83503396/213472020-e178e687-02d7-4d8c-a513-4a67835f532d.png"> <img width="200" alt="Bildschirmfoto 2023-01-19 um 09 47 04" src="https://user-images.githubusercontent.com/83503396/213472030-25b1861b-c1f0-4e7c-a692-5d55fc7413b7.png">
 [<img src="https://user-images.githubusercontent.com/83503396/213709492-51242568-d4b1-44fb-b990-2007aba6f61c.jpeg" width="600"/>](https://user-images.githubusercontent.com/83503396/213709492-51242568-d4b1-44fb-b990-2007aba6f61c.jpeg)
@@ -116,7 +117,7 @@ In order to mount the camera at the right height above the Linkam station and th
     
 `Local_webserver` contains code to set up a webserver that cropps and transfers the images from the webcam, `Rasperry_Pi_Pico` contains all the code to run the ChemBot website on the Rasperry Pi Pico W to control the servo motors. `Testing_Components` contains optional files that can help to test the servo motors and their interaction before setting up all the components.
     
-### 4.2 Short overview of GitHub code structureWebserver of webcam using flask
+### 4.2 Webserver of webcam using flask
     
 In order to display the webcam image correctly on the ChemBot website, an extra web server is set up with the help of Flask, OpenCV is used to get the camera images and transform them.
 
