@@ -80,9 +80,9 @@ Tools:
 #### 3.2.1 Create robot arms (step by step image)
             
 Using the hot glue gun, adhere the servo motors to the wooden spatulas as shown in the picture. These can be trimmed as desired with scissors. Make sure that the small plate that is screwed onto the motors is properly adjusted so that the motors can still be turned. When the five motors are glued together with the clamp, the lower transparent plate is glued to a larger wooden block for stabilization. Once everything is in place, attach and spread out as many wooden spatulas as you want to see as little blue from the servo motors as possible to make it look nicer. You can also paint the wood if you want.
+[<img src="https://user-images.githubusercontent.com/83503396/214118574-fd4a5ebc-564a-4520-9fd0-8b0d8fa31bd2.png" width="1000"/>](https://user-images.githubusercontent.com/83503396/214118574-fd4a5ebc-564a-4520-9fd0-8b0d8fa31bd2.png)
+[<img src="https://user-images.githubusercontent.com/83503396/214118585-fd23fd7d-7ddd-4b3e-88d8-c81e1defbb01.png" width="1000"/>](https://user-images.githubusercontent.com/83503396/214118585-fd23fd7d-7ddd-4b3e-88d8-c81e1defbb01.png)
 
-[<img src="https://user-images.githubusercontent.com/83503396/213474640-d30029ef-7184-4b52-ad78-6b0ba6b3da1a.png" width="1000"/>](https://user-images.githubusercontent.com/83503396/213474640-d30029ef-7184-4b52-ad78-6b0ba6b3da1a.png)
-[<img src="https://user-images.githubusercontent.com/83503396/213696975-d7d3f8ef-049a-4b74-93c6-9dde50b23b8b.jpeg" width="500"/>](https://user-images.githubusercontent.com/83503396/213696975-d7d3f8ef-049a-4b74-93c6-9dde50b23b8b.jpeg)
 
 #### 3.2.2 Connection between Raspberry Pi-Pico W and servomotors
 
